@@ -9,25 +9,25 @@
 ### Pull
 
 ```shell
-$ sudo docker pull hub.c.163.com/jabber/wordpress
+$ sudo docker pull trendsoft/wordpressd
 ```
 
 ### Run
 
 ```shell
-$ docker run --name wordpress -dp 80:80 -v `pwd`:/var/www/html hub.c.163.com/jabber/wordpress
+$ docker run --name wordpress -dp 80:80 -v `pwd`:/var/www/html trendsoft/wordpressd
 ```
 
 ## Xdebug 使用
 
 ```shell
-$ sudo docker pull hub.c.163.com/jabber/wordpress:xdebug
+$ sudo docker pull trendsoft/wordpressd:xdebug
 ```
 
 ### Run
 
 ```shell
-$ sudo docker run --name wordpress -dp 80:80 -v `pwd`:/var/www/html hub.c.163.com/jabber/wordpress:xdebug
+$ sudo docker run --name wordpress -dp 80:80 -v `pwd`:/var/www/html trendsoft/wordpressd:xdebug
 ```
 
 ### 进入xdebug容器
